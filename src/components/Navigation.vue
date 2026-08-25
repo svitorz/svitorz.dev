@@ -16,7 +16,7 @@ const isMenuOpen = ref(false);
             class="text-xl font-bold flex items-center justify-center"
           >
             <img
-              src="/icon.svg"
+              src="/icon.png"
               class="w-6 h-6 mr-2 dark:invert"
               alt="Elephant Icon"
             />

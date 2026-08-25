@@ -1,22 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+:root { font-family: 'Manrope', sans-serif; color: #252525; background: #f3f0e9; font-synthesis: none; }
+* { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; min-width: 320px; background: #f3f0e9; } a { color: inherit; text-decoration: none; } a:focus-visible { outline: 2px solid #b64f37; outline-offset: 5px; }
+.site-shell { max-width: 1240px; margin: auto; padding: 0 52px; } .site-header { height: 100px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #d9d4ca; } .wordmark { display: flex; align-items: center; gap: 11px; font-size: 14px; font-weight: 800; letter-spacing: -.02em; } .wordmark-mark { display: grid; place-items: center; width: 29px; height: 29px; border: 1px solid #b64f37; color: #b64f37; font: 11px 'DM Mono', monospace; letter-spacing: -.1em; } nav { display: flex; gap: 27px; font: 11px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: #72706a; } nav a { transition: color .2s ease; } nav a:hover, .text-link:hover { color: #b64f37; } .nav-external { color: #252525; } nav span, .text-link span { color: #b64f37; font-size: 15px; }
+.intro { padding: 104px 0 128px 16.2%; max-width: 940px; } .eyebrow, .section-number, .section-index, .entry-meta, .tech-line, .interests > span, .education-period { font: 10px 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #8a847b; } .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 27px; } .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #b64f37; } h1, h2, h3, p { margin-top: 0; } h1 { margin-bottom: 28px; font-size: clamp(4.5rem, 11vw, 9.5rem); line-height: .84; letter-spacing: -.09em; font-weight: 800; color: #282723; } h1 em { color: #b64f37; font-style: normal; } .intro-note { display: flex; gap: 14px; max-width: 445px; margin-left: 6px; } .note-line { width: 1px; background: #b64f37; flex: 0 0 1px; } .intro-note p { margin: 0; font-size: 16px; line-height: 1.65; color: #64615b; }
+.page-grid { display: grid; grid-template-columns: 16.2% 1fr; gap: 7.1%; border-top: 1px solid #d9d4ca; } .section-index { display: flex; flex-direction: column; gap: 16px; padding-top: 42px; } .section-index span { color: #b64f37; margin-bottom: 9px; } .section-index a { transition: color .2s ease; } .section-index a:hover { color: #b64f37; } .content-column { min-width: 0; } .content-section { display: grid; grid-template-columns: 76px 1fr; gap: 28px; padding: 78px 0; border-bottom: 1px solid #d9d4ca; } .section-number { padding-top: 7px; color: #b64f37; } h2 { max-width: 580px; margin-bottom: 23px; font-size: clamp(1.8rem, 3.1vw, 3.05rem); line-height: 1.02; letter-spacing: -.065em; color: #282723; } h3 { margin-bottom: 8px; font-size: 18px; letter-spacing: -.035em; } p { max-width: 610px; font-size: 15px; line-height: 1.8; color: #68645d; } .lead { font-size: 18px; line-height: 1.65; color: #3e3b36; }
+.entry-meta { display: flex; gap: 12px; align-items: center; margin-bottom: 18px; } .entry-rule { width: 34px; height: 1px; background: #b64f37; } .work-entry h2 { margin-bottom: 7px; } .company { font-weight: 700; color: #b64f37; margin-bottom: 25px; } .company span { color: #bcb4a8; padding: 0 4px; } .tech-line { max-width: 600px; margin: 28px 0 0; padding-top: 17px; border-top: 1px solid #d9d4ca; line-height: 2; } .tech-line span { color: #b64f37; margin-right: 8px; }
+.education-list { border-top: 1px solid #d9d4ca; max-width: 600px; } .education-item { display: grid; grid-template-columns: 120px 1fr; gap: 20px; padding: 22px 0; border-bottom: 1px solid #d9d4ca; } .education-period { padding-top: 4px; } .education-item p { margin: 0; font-size: 13px; line-height: 1.5; } .current-study h3::after { content: ' · agora'; color: #b64f37; font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
+.links-section p, .github-section p { max-width: 475px; } .text-link { display: inline-flex; align-items: center; gap: 8px; padding-bottom: 5px; border-bottom: 1px solid #b64f37; font-size: 14px; font-weight: 700; transition: color .2s ease; } .github-section { grid-template-columns: 76px 1fr; background: #e9e5dc; padding-left: 20px; padding-right: 20px; border-bottom: 0; } .github-mark { color: #b64f37; font-size: 28px; padding-top: 1px; } .interests { display: grid; grid-template-columns: 76px 1fr; gap: 28px; padding: 60px 0 105px; } .interests > span { color: #b64f37; padding-top: 5px; } .interests p { max-width: 430px; margin: 0; font-size: 14px; }
+.site-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #d9d4ca; padding: 25px 0 30px; font: 11px 'DM Mono', monospace; color: #8a847b; } .site-footer > span:first-child { color: #282723; font-weight: 500; } .site-footer address { display: flex; gap: 20px; font-style: normal; } .site-footer a:hover { color: #b64f37; }
+@media (max-width: 720px) { .site-shell { padding: 0 22px; } .site-header { height: 78px; } nav { gap: 13px; font-size: 9px; } nav a:nth-child(3) { display: none; } .intro { padding: 78px 0 88px; } h1 { font-size: clamp(4.5rem, 23vw, 7rem); } .intro-note p { font-size: 14px; } .page-grid { display: block; } .section-index { display: none; } .content-section { grid-template-columns: 36px 1fr; gap: 15px; padding: 58px 0; } .section-number { font-size: 9px; } h2 { font-size: 2.35rem; } .lead { font-size: 16px; } p { font-size: 14px; } .education-item { grid-template-columns: 89px 1fr; gap: 12px; } .education-item h3 { font-size: 15px; } .github-section { grid-template-columns: 36px 1fr; padding: 35px 15px; } .interests { grid-template-columns: 36px 1fr; gap: 15px; padding: 50px 0 80px; } .site-footer { align-items: flex-start; gap: 16px; flex-wrap: wrap; } .site-footer address { order: 3; width: 100%; } } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
 
-@import "tailwindcss";
-
-@custom-variant dark (&:where(.dark, .dark *));
-
-@theme {
-  --color-lack-primary: #0a0a0a;
-  --color-lack-black: #080808;
-  --color-lack-red: #d70000;
-  --color-lack-green: #789978;
-  --color-lack-yellow: #ffaa88;
-  --color-lack-blue: #7788aa;
-  --color-lack-magenta: #d7007d;
-  --color-lack-cyan: #708090;
-  --color-lack-white: #deeeed;
-  --font-jetbrains: "JetBrains Mono", "sans-serif";
-}
-
-.invert {
-  filter: invert(100%);
-}
+/* O tema escuro mantém o papel e a tinta da direção editorial, só invertendo o contraste. */
+html.dark body, html.dark .site-shell { background: #202321; color: #e8e3d9; }
+html.dark .site-header, html.dark .page-grid, html.dark .content-section, html.dark .education-list, html.dark .education-item, html.dark .tech-line, html.dark .site-footer { border-color: #3b3d38; }
+html.dark h1, html.dark h2, html.dark h3, html.dark .nav-external, html.dark .site-footer > span:first-child { color: #eee9df; }
+html.dark p, html.dark nav, html.dark .site-footer, html.dark .eyebrow, html.dark .section-index, html.dark .entry-meta, html.dark .tech-line, html.dark .education-period { color: #aaa99f; }
+html.dark .lead { color: #d1ccc2; } html.dark .company, html.dark .text-link, html.dark .section-index span, html.dark .interests > span { color: #db765a; } html.dark .github-section { background: #292c29; }
+html.dark .theme-toggle { color: #e8b66c; }
+body, .site-shell, h1, h2, h3, p, nav, .site-header, .page-grid, .content-section, .education-list, .education-item, .tech-line, .github-section, .site-footer, .theme-toggle { transition: background-color .35s ease, color .35s ease, border-color .35s ease; }
+.nav-external { display: inline-flex; align-items: center; gap: 5px; } nav span { line-height: 1; } .theme-toggle { border: 0; padding: 0 0 0 5px; background: transparent; color: #b64f37; cursor: pointer; font: 17px/1 'Manrope', sans-serif; } .theme-toggle:focus-visible { outline: 2px solid #b64f37; outline-offset: 5px; }
